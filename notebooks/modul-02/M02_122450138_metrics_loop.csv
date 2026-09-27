@@ -1,0 +1,6 @@
+run_id,record_type,seed,tahap,yang_diperbaiki,loss_awal,loss_akhir,objective_akhir,benar_dari_4,prediksi,epochs
+xor_rusak,training_loop,122450138,rusak,belum ada perbaikan,0.7059447509853392,67.2584915114168,0.5994582031372347,3,"[0, 0, 1, 0]",400
+xor_perbaikan-1,training_loop,122450138,perbaikan-1,menambahkan ReLU,0.6902079152636901,81.22096954716791,0.6931471805599453,2,"[0, 0, 0, 0]",400
+xor_perbaikan-2,training_loop,122450138,perbaikan-2,memberikan logit mentah ke loss,0.6902079152636901,2.563403624797012e-27,3.0316638985845453e-27,4,"[0, 1, 1, 0]",400
+xor_perbaikan-3,training_loop,122450138,perbaikan-3,memindahkan backward sebelum optimizer.step,0.6902079152636901,2.1674692061644482e-27,2.563403624797012e-27,4,"[0, 1, 1, 0]",400
+xor_perbaikan-4,training_loop,122450138,perbaikan-4,menambahkan optimizer.zero_grad,0.6902079152636901,0.17236966194085898,0.17265500878031975,4,"[0, 1, 1, 0]",400
