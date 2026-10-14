@@ -1,0 +1,19 @@
+module,student_id,run_id,seed,dataset,arsitektur,parameter,perkalian,n_update,train_loss,val_loss,val_acc,gap,detik_per_epoch,catatan
+M05,122450138,fnn,138,fashion,"Sequential(
+  (0): Flatten(start_dim=1, end_dim=-1)
+  (1): Linear(in_features=784, out_features=530, bias=True)
+  (2): ReLU()
+  (3): Linear(in_features=530, out_features=10, bias=True)
+)",421360,420820,790,0.23344010453224182,0.4725473709106445,0.842,0.2391072663784027,1.0460126599999966,
+M05,122450138,cnn-baseline,138,fashion,"Sequential(
+  (0): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (1): ReLU()
+  (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (3): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (4): ReLU()
+  (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (6): Flatten(start_dim=1, end_dim=-1)
+  (7): Linear(in_features=3136, out_features=128, bias=True)
+  (8): ReLU()
+  (9): Linear(in_features=128, out_features=10, bias=True)
+)",421642,4241152,790,0.21527026555538178,0.374945556640625,0.871,0.15967529108524323,8.392795790000037,
